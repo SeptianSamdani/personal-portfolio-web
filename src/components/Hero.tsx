@@ -21,21 +21,16 @@ export const Hero = () => {
             </motion.p>
 
             <motion.h1 variants={fadeUp} className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'>
-                I'm <span className="text-primary">Septian</span>
-                Fullstack Developer and Machine Learning Engineer
+                Hi, I'm <span className="text-primary">Septian Samdani</span>
+                <br />
+                Fullstack Javascript Developer
             </motion.h1>
 
             <motion.div 
                 variants={fadeUp}
-                className='mt-5 flex gap-2'
+                className='mt-5'
             >
-                <Button asChild>
-                    <a href="#projects">My Project</a>
-                </Button>
-
-                <Button variant='outline'>
-                    Download CV
-                </Button>
+                <p className='text-md text-neutral-300'>The person who ready to learn and explore the world of technology.</p>
             </motion.div>
         </motion.section>
     )
