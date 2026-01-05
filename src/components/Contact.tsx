@@ -7,6 +7,15 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
+// Add type definition
+type ContactFormValues = {
+    name: string;
+    company: string;
+    email: string;
+    phone: string;
+    message: string;
+}
+
 export const Contact = () => {
     const form = useForm<ContactFormValues>({
         defaultValues: {
@@ -19,14 +28,16 @@ export const Contact = () => {
     }); 
 
     const onSubmit = (values: ContactFormValues) => {
-
+        console.log(values);
+        // TODO: Add form submission logic here
     }
+
     return (
         <motion.section
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true, amount: 0.8 }}
-            variants={ fadeUp}
+            variants={fadeUp}
             className='mt-30 scroll-mt-10'
             id='contact'
         >
@@ -100,7 +111,7 @@ export const Contact = () => {
                                 <FormItem className="w-full">
                                     <FormControl>
                                         <Input 
-                                            type="phone"
+                                            type="tel"
                                             className="border-0" 
                                             placeholder="(123) 456-7890"
                                             {...field}
