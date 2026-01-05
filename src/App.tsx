@@ -8,12 +8,13 @@ import { Testimonials } from '@/components/Testimonials'
 import { Contact } from '@/components/Contact'
 import { useEffect } from 'react'
 import Lenis from 'lenis'; 
+import { Footer } from './components/Footer'
 
 
 export const App = () => {
   useEffect(() => {
     const lenis = new Lenis(); 
-    function raf(time: any) {
+    function raf(time: number) {
       lenis.raf(time); 
 
       requestAnimationFrame(raf); 
@@ -31,6 +32,7 @@ export const App = () => {
       <Resume />
       <Testimonials />
       <Contact />
+      <Footer />
     </main>
   )
 }

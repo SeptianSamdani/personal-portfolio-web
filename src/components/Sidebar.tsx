@@ -15,7 +15,7 @@ export const Sidebar = () => {
                     <Button 
                         variant='ghost'
                         size='icon'
-                        className="m-4 fixed top-4 right-4 z-50 border-2 hover:border-primary bg-neutral-800 py-5 px-5 rounded-full hover:text-primary cursor-pointer"
+                        className="m-4 fixed top-4 right-4 z-50 border-2 hover:border-primary bg-neutral-800 py-5 px-5 rounded-full hover:text-primary cursor-pointer lg:hidden"
                     >
                         <MenuIcon size={30} />
                     </Button>
