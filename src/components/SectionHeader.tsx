@@ -18,7 +18,7 @@ export const SectionHeader = ({
 
             <motion.h2
                 variants={fadeUp}
-                className='text-4xl font-bold capitalize mt-2 md:max-w-3xl'
+                className='text-4xl font-bold capitalize mt-4 md:max-w-3xl'
             >
                 {title}
             </motion.h2>

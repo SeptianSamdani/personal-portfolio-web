@@ -40,7 +40,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  --font-syne: 'Syne', sans-serif; 
+  --font-roboto-mono: 'Roboto Mono', sans-serif; 
 }
 
 :root {
@@ -123,6 +123,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Roboto Mono', monospace;
   }
 
   /* Custom Scrollbar - Webkit (Chrome, Safari, Edge) */

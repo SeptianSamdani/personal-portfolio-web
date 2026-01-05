@@ -80,25 +80,25 @@ const socialLinks: LinksType[] = [
 
 const projectsData: ProjectType[] = [
   {
-    imgSrc: '/images/project-ph-1.jpeg',
+    imgSrc: '/personal-portfolio-web/images/project-ph-1.jpeg',
     title: 'Full stack music app',
     tags: ['API', 'Development'],
     projectLink: 'https://musify-5al0.onrender.com/',
   },
   {
-    imgSrc: '/images/project-ph-2.jpeg',
+    imgSrc: '/personal-portfolio-web/images/project-ph-2.jpeg',
     title: 'Full stack music app',
     tags: ['API', 'Development'],
     projectLink: 'https://musify-5al0.onrender.com/',
   },
   {
-    imgSrc: '/images/project-ph-3.jpeg',
+    imgSrc: '/personal-portfolio-web/images/project-ph-3.jpeg',
     title: 'Full stack music app',
     tags: ['API', 'Development'],
     projectLink: 'https://musify-5al0.onrender.com/',
   },
   {
-    imgSrc: '/images/project-ph-4.jpeg',
+    imgSrc: '/personal-portfolio-web/images/project-ph-4.jpeg',
     title: 'Full stack music app',
     tags: ['API', 'Development'],
     projectLink: 'https://musify-5al0.onrender.com/',
@@ -144,35 +144,35 @@ const experience: ExperienceType[] = [
 const tools: ToolsType[] = [
   {
     label: 'Figma',
-    imgSrc: '/images/tools/figma.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/figma.svg',
   },
   {
     label: 'CSS',
-    imgSrc: '/images/tools/css3.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/css3.svg',
   },
   {
     label: 'Tailwind CSS',
-    imgSrc: '/images/tools/tailwindcss.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/tailwindcss.svg',
   },
   {
     label: 'React',
-    imgSrc: '/images/tools/react.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/react.svg',
   },
   {
     label: 'JavaScript',
-    imgSrc: '/images/tools/javascript.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/javascript.svg',
   },
   {
     label: 'Node.js',
-    imgSrc: '/images/tools/nodejs.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/nodejs.svg',
   },
   {
     label: 'Express.js',
-    imgSrc: '/images/tools/expressjs.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/expressjs.svg',
   },
   {
     label: 'Mongodb',
-    imgSrc: '/images/tools/mongodb.svg',
+    imgSrc: '/personal-portfolio-web/images/tools/mongodb.svg',
   },
 ];
 
@@ -211,15 +211,15 @@ const services: ServiceType[] = [
 
 const statsData: StatsType[] = [
   {
-    number: '30+',
+    number: '10+',
     label: 'Happy Clients',
   },
   {
-    number: '05+',
+    number: '1+',
     label: 'Years Of Experience',
   },
   {
-    number: '50+',
+    number: '10+',
     label: 'Projects Done',
   },
 ];

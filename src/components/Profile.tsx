@@ -11,7 +11,7 @@ export const Profile = () => {
           {/* Avatar */}
           <div className="mb-6">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+              src="/personal-portfolio-web/avatar.jpg"
               alt="Septian Samdani"
               className="w-full aspect-square object-cover rounded-xl border border-neutral-700"
             />

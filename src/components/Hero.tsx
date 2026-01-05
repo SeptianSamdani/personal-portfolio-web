@@ -16,10 +16,10 @@ export const Hero = () => {
                 variants={fadeUp}    
                 className='flex items-center justify-center py-1 gap-2 border border-neutral-600 rounded-sm w-32'
             >
-                <SparklesIcon size={15} /> <span>Introduction</span>
+                <SparklesIcon size={14} /> <span>Intro</span>
             </motion.p>
 
-            <motion.h1 variants={fadeUp} className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-2 max-w-3xl md:leading-16'>
+            <motion.h1 variants={fadeUp} className='text-4xl md:text-5xl lg:text-6xl font-semibold capitalize mt-4 max-w-3xl md:leading-16'>
                 Hi, I'm <span className="text-primary">Septian Samdani</span>
                 <br />
                 Fullstack Javascript Developer

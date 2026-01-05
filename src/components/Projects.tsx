@@ -17,6 +17,7 @@ export const Projects = () => {
             <SectionHeader 
                 subtitle='Projects' 
                 title='My Projects' 
+        
             />
 
             <motion.div 
