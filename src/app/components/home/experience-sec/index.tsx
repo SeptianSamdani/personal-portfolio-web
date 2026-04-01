@@ -92,35 +92,40 @@ const ExperienceSec = () => {
                     </div>
 
                     <div className="relative">
-                        {/* Garis timeline vertikal */}
-                        <div className="absolute left-0 md:left-[160px] top-0 bottom-0 w-px bg-softGray no-print" />
+                        {/* Garis timeline — hanya desktop */}
+                        <div className="hidden md:block absolute left-[140px] top-0 bottom-0 w-px bg-softGray no-print" />
 
-                        <div className="flex flex-col gap-8 md:gap-10">
+                        <div className="flex flex-col gap-5 md:gap-8">
                             {list.map((exp, index) => (
-                                <div key={index} className="relative flex flex-col md:flex-row gap-3 md:gap-0">
+                                <div key={index} className="relative flex flex-col md:flex-row md:gap-0 gap-0">
 
-                                    {/* Tahun — kiri */}
-                                    <div className="md:w-[160px] md:pr-8 flex-shrink-0 flex md:flex-col md:items-end items-center gap-3 md:gap-1">
-                                        <span className="text-sm font-semibold text-primary">{exp.year}</span>
-                                        <span className="md:hidden text-xs text-secondary">{exp.type}</span>
+                                    {/* Mobile: header card (tahun + type) */}
+                                    <div className="md:hidden flex items-center justify-between mb-2 px-1">
+                                        <span className="text-xs font-semibold text-primary">{exp.year}</span>
+                                        <span className="text-xs text-secondary bg-softGray px-2.5 py-1 rounded-full">{exp.type}</span>
                                     </div>
 
-                                    {/* Dot timeline */}
-                                    <div className="no-print absolute left-[-5px] md:left-[155px] top-1 w-3 h-3 rounded-full border-2 border-primary bg-white flex-shrink-0" />
+                                    {/* Desktop: kolom tahun kiri */}
+                                    <div className="hidden md:flex md:w-[140px] md:pr-6 flex-shrink-0 flex-col items-end justify-start pt-4">
+                                        <span className="text-sm font-semibold text-primary">{exp.year}</span>
+                                    </div>
 
-                                    {/* Konten — kanan */}
+                                    {/* Dot — hanya desktop */}
+                                    <div className="no-print hidden md:flex absolute left-[135px] top-4 w-3 h-3 rounded-full border-2 border-primary bg-white flex-shrink-0" />
+
+                                    {/* Card konten */}
                                     <div className="md:pl-10 flex-1">
-                                        <div className="bg-white border border-softGray rounded-xl p-5 hover:border-primary/30 hover:shadow-sm transition-all duration-200">
-                                            <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-2">
+                                        <div className="bg-white border border-softGray rounded-xl p-4 md:p-5 hover:border-primary/30 transition-all duration-200">
+                                            <div className="flex items-start justify-between gap-2 mb-2">
                                                 <div>
-                                                    <h5 className="text-black font-semibold">{exp.title}</h5>
-                                                    <p className="text-sm text-primary font-medium mt-0.5">{exp.company}</p>
+                                                    <h5 className="text-black font-semibold text-base md:text-lg leading-snug">{exp.title}</h5>
+                                                    <p className="text-xs md:text-sm text-primary font-medium mt-0.5">{exp.company}</p>
                                                 </div>
-                                                <span className="hidden md:inline-flex text-xs text-secondary bg-softGray px-3 py-1 rounded-full whitespace-nowrap h-fit">
+                                                <span className="hidden md:inline-flex text-xs text-secondary bg-softGray px-3 py-1 rounded-full whitespace-nowrap flex-shrink-0">
                                                     {exp.type}
                                                 </span>
                                             </div>
-                                            <p className="text-sm text-secondary leading-relaxed mt-2">{exp.description}</p>
+                                            <p className="text-xs md:text-sm text-secondary leading-relaxed">{exp.description}</p>
                                         </div>
                                     </div>
 
@@ -128,7 +133,6 @@ const ExperienceSec = () => {
                             ))}
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

@@ -66,9 +66,9 @@ const HeroSection = () => {
 
                     {/* Avatar */}
                     <div className="relative w-full lg:w-1/2 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-none mx-auto">
-                        <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[520px] xl:h-[620px]">
+                        <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[520px] xl:h-[620px] ml-6">
                             <Image
-                                src={"/images/home/banner/avatar.jpg"}
+                                src={"/images/home/banner/profile.png"}
                                 alt="Septian Samdani"
                                 fill
                                 priority
