@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   keywords: ["Septian Samdani", "Junior Web Developer", "React Developer", "Laravel Developer", "Portfolio"],
   authors: [{ name: "Septian Samdani" }],
   openGraph: {
-    title: "Septian Samdani | Junior Web Developer",
-    description: "Portfolio Septian Samdani, Junior Web Developer.",
+    title: "Septian Samdani | Junior Software Developer",
+    description: "Portfolio Septian Samdani, Junior Software Developer.",
     url: "https://septiansamdani.web.id",
     siteName: "Septian Samdani Portfolio",
     locale: "id_ID",
@@ -42,7 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             name: "Septian Samdani",
                             url: "https://septiansamdani.web.id",
                             jobTitle: "Junior Web Developer",
-                            email: "samdhaniseptyan@gmail.com",
+                            email: "septiansamdani05@gmail.com",
                             sameAs: ["https://www.linkedin.com/in/septiansamdani"],
                         }),
                     }}
