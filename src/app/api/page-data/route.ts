@@ -1,42 +1,33 @@
 import { NextResponse } from "next/server";
+import { platform } from "os";
 import { title } from "process";
 
 const contactBar = {
-  contactItems: [
-    {
-      type: "email",
-      label: "hello@imsruthi.com",
-      icon: "/images/icon/mail-icon.svg",
-      link: "mailto:hello@imsruthi.com"
-    },
-    {
-      type: "phone",
-      label: "+901 5588 2500",
-      icon: "/images/icon/call-icon.svg",
-      link: "tel:+90155882500"
-    },
-    {
-      type: "website",
-      label: "www.mywebsite.com",
-      icon: "/images/icon/web-icon.svg",
-      link: "https://www.mywebsite.com"
-    }
-  ],
   socialItems: [
-    {
-      platform: "dribbble",
-      icon: "/images/icon/dribble-icon.svg",
-      link: "https://dribbble.com"
-    },
     {
       platform: "linkedin",
       icon: "/images/icon/linkedin-icon.svg",
-      link: "https://linkedin.com"
-    },
+      link: "https://www.linkedin.com/in/septiansamdani"
+    }, 
     {
-      platform: "facebook",
-      icon: "/images/icon/facebook-icon.svg",
-      link: "https://facebook.com"
+      platform: "github", 
+      icon: "/images/icon/github.svg", 
+      link: "https://github.com/SeptianSamdani"
+    }, 
+    {
+      platform: "instagram", 
+      icon: "/images/icon/instagram.svg", 
+      link: "https://www.instagram.com/septiansamdanny/"
+    }, 
+    {
+      platform: "youtube", 
+      icon: "/images/icon/youtube.svg", 
+      link: "https://www.youtube.com/@septiansamdanii"
+    }, 
+    {
+      platform: "gmail", 
+      icon: "/images/icon/mail.svg", 
+      link: "mailto:septiansamdani05@gmail.com"
     }
   ]
 };
@@ -45,82 +36,43 @@ const contactBar = {
 const educationData = {
   education: [
     {
-      title: "Lipsum Collage - 2010",
-      description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Koramangala collage."
+      title: "Universitas Siliwangi - 2022",
+      description: "S1 Sistem Informasi, Agustus 2022 – Agustus 2026. Fokus pada pengembangan web dan analisis data."
     },
     {
-      title: "Master Diploma - 2012",
-      description: "Combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable."
+      title: "Bitlabs Academy - 2024",
+      description: "Studi Independen Data Analytics for Business Batch 7. Mempelajari SQL, Python, Tableau, dan business analytics."
     },
     {
-      title: "Master in User Experience - 2014",
-      description: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
+      title: "Dicoding - ASAH - 2025",
+      description: "React & Back-End with AI Cohort. Dipilih dari 2.000 peserta, mencakup React, Node.js, dan AWS Cloud."
     }
   ],
   skills: [
-    {
-      name: "Figma",
-      icon: "/images/home/education-skill/figma-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Photoshop",
-      icon: "/images/home/education-skill/photoshop-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Sketch",
-      icon: "/images/home/education-skill/sketch-icon.svg",
-      rating: 4
-    },
-    {
-      name: "Adobe XD",
-      icon: "/images/home/education-skill/adobe-icon.svg",
-      rating: 4
-    },
-    {
-      name: "Framer",
-      icon: "/images/home/education-skill/framer-icon.svg",
-      rating: 5
-    },
-    {
-      name: "Invasion",
-      icon: "/images/home/education-skill/invision-icon.svg",
-      rating: 3
-    }
+    { name: "React.js", icon: "/images/home/education-skill/react.svg", rating: 4 },
+    { name: "Typescript", icon: "/images/home/education-skill/typescript.svg", rating: 4 },
+    { name: "Next.js", icon: "/images/home/education-skill/nextjs.svg", rating: 4 },
+    { name: "Laravel", icon: "/images/home/education-skill/laravel.svg", rating: 4 },
+    { name: "PostgreSQL", icon: "/images/home/education-skill/postgresql.svg", rating: 4 },
+    { name: "Node.js", icon: "/images/home/education-skill/nodejs.svg", rating: 3 },
+    { name: "Tailwind", icon: "/images/home/education-skill/tailwind.svg", rating: 3 },
+    { name: "JavaScript", icon: "/images/home/education-skill/js.svg", rating: 4 }, 
+    { name: "MongoDB", icon: "/images/home/education-skill/mongodb.svg", rating: 4 },
   ]
-}
+};
 
 const contactLinks = {
   socialLinks: [
-    {
-      title: "Dribble",
-      href: "/"
-    },
-    {
-      title: "Facebook",
-      href: "/"
-    },
-    {
-      title: "LinkedIn",
-      href: "/"
-    },
+    { title: "LinkedIn", href: "https://www.linkedin.com/in/septiansamdani" }
   ],
   contactInfo: [
     {
       type: "email",
-      label: "hello@imsruthi.com",
-      link: "mailto:hello@imsruthi.com"
-    },
-    {
-      type: "phone",
-      label: "+901 5588 2500",
-      link: "tel:+90155882500"
+      label: "septiansamdani05@gmail.com",
+      link: "mailto:septiansamdani05@gmail.com"
     }
   ]
-}
-
-
+};
 
 export const GET = async () => {
   return NextResponse.json({

@@ -5,15 +5,36 @@ import { createContext, useContext, useState } from "react";
 type Lang = "en" | "id";
 
 export const heroContent = {
+  en: {
+    greeting: "I'm Septian",
+    title: "Junior Web Developer",
+    description: "Final year Information Systems student at Universitas Siliwangi. Passionate about web development and data, with experience in React, Laravel, Golang, and cloud technologies.",
+  },
+  id: {
+    greeting: "Saya Septian",
+    title: "Junior Web Developer",
+    description: "Mahasiswa tingkat akhir Sistem Informasi Universitas Siliwangi. Fokus pada pengembangan web dan data, berpengalaman dengan React, Laravel, Golang, dan teknologi cloud.",
+  },
+};
+
+export const aboutContent = {
     en: {
-        greeting: "I'm Sruthi",
-        title: "UI/UX Designer",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. variations of passages of Lorem Ipsum available, but the majority have suffered alteration",
+        description: "I'm a final year Information Systems student at Universitas Siliwangi with a passion for web development and data. I have experience in full stack development through various internship programs and independent study, working with technologies like React, Laravel, Golang, and AWS Cloud.",
+        stats: [
+            { count: "3+", label: "Years Learning" },
+            { count: "5+", label: "Programs Completed" },
+            { count: "4+", label: "Internship Experience" },
+        ],
+        languages: ["English", "Indonesia"],
     },
     id: {
-        greeting: "Saya Sruthi",
-        title: "Desainer UI/UX",
-        description: "Lorem Ipsum adalah teks dummy sederhana dari industri percetakan dan penerbitan. Berbagai variasi dari Lorem Ipsum tersedia, namun sebagian besar telah mengalami perubahan.",
+        description: "Saya mahasiswa tingkat akhir Sistem Informasi di Universitas Siliwangi dengan ketertarikan pada pengembangan web dan data. Berpengalaman dalam full stack development melalui berbagai program magang dan studi independen, menggunakan teknologi seperti React, Laravel, Golang, dan AWS Cloud.",
+        stats: [
+            { count: "3+", label: "Tahun Belajar" },
+            { count: "5+", label: "Program Diikuti" },
+            { count: "4+", label: "Pengalaman Magang" },
+        ],
+        languages: ["Indonesia", "English"],
     },
 };
 

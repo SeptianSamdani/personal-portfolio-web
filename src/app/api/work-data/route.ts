@@ -39,9 +39,6 @@ const workData = [
     }
 ];
 
-
-
-
 export const GET = async () => {
     return NextResponse.json({
         workData
